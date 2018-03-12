@@ -10,9 +10,11 @@ import {
   StyleSheet,
   Text,
   View,
+  Button,
   PanResponder
 } from 'react-native';
 import VideoPlayer from 'react-native-video-controls';
+import DeviceBrightness from 'react-native-device-brightness';
 
 export default class App extends Component<{}> {
   constructor (props) {
@@ -21,8 +23,13 @@ export default class App extends Component<{}> {
       paused: true,
       bg: 'white',
       top: 0,
-      left: 0
+      left: 0,
+      brightness: 1
     }
+  }
+
+  setBrightness (n) {
+    DeviceBrightness.setBrightnessLevel(n)
   }
 
   componentWillMount(){
@@ -56,6 +63,17 @@ export default class App extends Component<{}> {
             source={{ uri: 'https://vjs.zencdn.net/v/oceans.mp4' }}
             paused={this.state.paused}
             volume={0.5}
+            setBrightness={this.setBrightness.bind(this)}
+          />
+        </View>
+        <View style={[]}>
+          <Button
+            onPress={() => {
+              DeviceBrightness.setBrightnessLevel(Math.random())
+            }}
+            title="set brightness"
+            color="#841584"
+            accessibilityLabel="Learn more about this purple button"
           />
         </View>
       </View>

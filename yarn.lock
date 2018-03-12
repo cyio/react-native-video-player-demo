@@ -3579,6 +3579,10 @@ react-devtools-core@3.0.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+react-native-device-brightness@^1.2.0:
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/react-native-device-brightness/download/react-native-device-brightness-1.2.0.tgz#f6498ca5af4c6283212f74aa2f05d1cff0596af0"
+
 react-native-video-controls@./react-native-video-controls:
   version "2.0.2"
   dependencies:
