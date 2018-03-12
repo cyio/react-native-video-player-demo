@@ -1,0 +1,6 @@
+[submodule "react-native-video-controls"]
+	path = react-native-video-controls
+	url = git@github.com:cyio/react-native-video-controls.git
+[submodule "react-native-video"]
+	path = react-native-video
+	url = git@github.com:cyio/react-native-video.git
