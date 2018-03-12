@@ -3588,8 +3588,9 @@ react-native-video-controls@./react-native-video-controls:
   dependencies:
     lodash "^4.16.4"
 
-react-native-video@./react-native-video:
+react-native-video@^2.0.0:
   version "2.0.0"
+  resolved "http://registry.npm.taobao.org/react-native-video/download/react-native-video-2.0.0.tgz#f33fa6fb7e7e3c93ab5787944cefd58bf7355867"
   dependencies:
     keymirror "0.1.1"
     prop-types "^15.5.10"
